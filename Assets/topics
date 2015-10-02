@@ -1,0 +1,14 @@
+Make sure each lecture includes the link to the MySQL documentation for that command
+
+Create a MySQL Database
+Create a User for the Database
+Manage Privileges for the User for the Database
+Manually Back Up the Database
+Manually Restore the Database
+Assign indexes to tables and other TABLE alters
+Use the mysql -exec "tricks"
+
+I've created an SQL script to populate a database with tables for them.
+It's a stub of the mysql database.
+They should first CREATE DATABASE testdb;
+Then they should mysql -u theiruser testdb < testdb.sql
