@@ -1,10 +1,12 @@
 Make sure each lecture includes the link to the MySQL documentation for that command
 
+Connect to the MySQL server (may need -h option)
 Create a MySQL Database
-Create a User for the Database
+Create a User for the Database (differentiate between the database user and the user who signs in to the application)
 Manage Privileges for the User for the Database
 Manually Back Up the Database
 Manually Restore the Database
+Reset a User's password
 Assign indexes to tables and other TABLE alters
 Use the mysql -exec "tricks"
 
