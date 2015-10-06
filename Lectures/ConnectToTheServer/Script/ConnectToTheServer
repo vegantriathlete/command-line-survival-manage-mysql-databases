@@ -1,0 +1,133 @@
+The first thing that you will need to do
+
+is to connect to the MySQL server.
+
+You can use "man mysql" to access
+
+the manual page for the mysql command.
+
+The two options I will use are
+
+-u (or --user) and
+
+-p (or --password).
+
+Your situation may require
+
+that you also use the -h option.
+
+I will discuss that situation separately.
+
+The first thing you should make sure
+
+you understand is that the user assigned
+
+to access the database does not have
+
+to be the same as the user that
+
+signs in to the web application.
+
+In fact, best practice is that
+
+it is not the same user.
+
+It also follows that best practice
+
+is that the password is different as well.
+
+In order to be able to complete the rest
+
+of the lectures, you must have the credentials
+
+for a user that has elevated privileges.
+
+Otherwise, you will not be able to
+
+create databases and users.
+
+For my examples I will be using
+
+the root user.
+
+To specify which user is accessing
+
+the database you can use the short option
+
+-u followed by a space and then the user name.
+
+Alternatively, you can use the long option
+
+--user followed by the equal sign and then the user name.
+
+The next point to keep in mind is that
+
+you should never specify the password
+
+with the command string itself.
+
+Doing so results in the clear text
+
+version of the password being saved
+
+to a log file on the server.
+
+So, whether you use the short option -p
+
+or the long option --password
+
+you should not include the actual password.
+
+Instead, let the system prompt you
+
+to enter the password separately.
+
+For my example, the completed command looks like
+
+mysql -u root -p
+
+Now I enter the password and press enter
+
+to be taken to the database server.
+
+I will quit out of the server
+
+and discuss the hostname option.
+
+You can use the short version -h
+
+or the long version --host
+
+The reason that I did not need to
+
+use the host option for my first example
+
+is that the value defaults to localhost,
+
+which just means that the database server
+
+is located on the same machine I'm currently using.
+
+It's also possible that the database server
+
+is located on a different machine.
+
+I will illustrate the use of the host option now.
+
+For my example the completed command looks like
+
+mysql -u root -p -h localhost
+
+Once again, after I enter the password
+
+and press enter I am taken
+
+to the database server.
+
+So now that you know how to
+
+sign in to the MySQL server,
+
+it's time to start administering things.
+
+See you in the next lecture!
