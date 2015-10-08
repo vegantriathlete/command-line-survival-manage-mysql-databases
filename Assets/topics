@@ -1,13 +1,14 @@
 Make sure each lecture includes the link to the MySQL documentation for that command
 
-Connect to the MySQL server (may need -h option)
-Create a MySQL Database
-Create a User for the Database (differentiate between the database user and the user who signs in to the application)
-Manage Privileges for the User for the Database
-Manually Back Up the Database
-Manually Restore the Database
-Reset a User's password
-Assign indexes to tables and other TABLE alters
+Connect to the MySQL server (may need -h option) [man mysql; https://dev.mysql.com/doc/refman/5.7/en/mysql.html]
+Create a MySQL Database [https://dev.mysql.com/doc/refman/5.7/en/create-database.html]
+Create a table in the Database [https://dev.mysql.com/doc/refman/5.7/en/create-table.html]
+Create a User for the Database (differentiate between the database user and the user who signs in to the application) [https://dev.mysql.com/doc/refman/5.7/en/create-user.html]
+Manage Privileges for the User for the Database [https://dev.mysql.com/doc/refman/5.7/en/grant.html]
+Manually Back Up the Database [https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html]
+Manually Restore the Database [man mysql; https://dev.mysql.com/doc/refman/5.7/en/mysql.html]
+Reset a User's password [https://dev.mysql.com/doc/refman/5.7/en/set-password.html]
+Assign indexes to tables and other TABLE alters [https://dev.mysql.com/doc/refman/5.7/en/alter-table.html]
 Use the mysql -exec "tricks"
 
 I've created an SQL script to populate a database with tables for them.
