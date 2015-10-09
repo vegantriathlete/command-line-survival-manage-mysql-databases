@@ -130,6 +130,10 @@ SHOW DATABASES;
 
 command I see that the database no longer exists.
 
+Do take note that when you DROP a database
+
+you also destroy all the tables inside it!
+
 I'll finish this lesson by
 
 creating the database once more
