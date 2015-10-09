@@ -1,0 +1,139 @@
+A Database is a container
+
+for a set of Tables.
+
+A Database is implemented on the computer
+
+as a directory that holds a bunch of files.
+
+The first thing you need to do
+
+before you can start storing
+
+any data on the computer
+
+is to create a database.
+
+If you look at the syntax
+
+for creating a database,
+
+you will see that there are
+
+two optional specifications:
+
+a character set and
+
+a collation methodology.
+
+I will not be discussing
+
+character sets and collation
+
+in this course, as it can
+
+become quite complicated
+
+on account of the fact that
+
+not only tables can have their own
+
+character set and collation
+
+but so can the columns in the tables.
+
+In general, unless you have a particular need
+
+to specify the character set or collation
+
+you will be fine to simply create the database.
+
+First, I will sign in to the MySQL server.
+
+The MySQL server doesn't care whether
+
+you use upper or lower case characters.
+
+But, it can be helpful for you to
+
+get into the habit of writing
+
+keywords in all upper case
+
+and that is what I am going to do
+
+with my examples.
+
+Before I create the database,
+
+I will show you the existing databases
+
+by typing
+
+SHOW DATABASES;
+
+Note that I had to place
+
+a semicolon at the end of the statement.
+
+Also note that I have used
+
+upper case to signal to you
+
+which parts are keywords.
+
+In this case, both things were keywords.
+
+Now I will create another database
+
+by typing
+
+CREATE DATABASE mydatabase;
+
+substituting the actual name
+
+of the database I want to create
+
+for the "mydatabase" placeholder.
+
+Note that I entered my database name
+
+in lower case to signal to you
+
+that it is not a keyword,
+
+whereas the other two words were upper case.
+
+Once again, I completed the statement
+
+with a semicolon.
+
+The server returned a message
+
+to let me know that the database was created.
+
+I can now see the database when I use
+
+SHOW DATABASES;
+
+If I want to delete the database I use
+
+DROP DATABASE mydatabase;
+
+The server gives me a message
+
+to let me know that the database was deleted.
+
+Now when I run the
+
+SHOW DATABASES;
+
+command I see that the database no longer exists.
+
+I'll finish this lesson by
+
+creating the database once more
+
+so that it's ready for the rest of the course.
+
+See you in the next lecture!
