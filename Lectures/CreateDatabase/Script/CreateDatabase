@@ -58,7 +58,7 @@ But, it can be helpful for you to
 
 get into the habit of writing
 
-keywords in all upper case
+reserved words in all upper case
 
 and that is what I am going to do
 
@@ -80,9 +80,9 @@ Also note that I have used
 
 upper case to signal to you
 
-which parts are keywords.
+which parts are reserved words.
 
-In this case, both things were keywords.
+In this case, both things were reserved words.
 
 Now I will create another database
 
@@ -100,7 +100,7 @@ Note that I entered my database name
 
 in lower case to signal to you
 
-that it is not a keyword,
+that it is not a reserved word,
 
 whereas the other two words were upper case.
 
