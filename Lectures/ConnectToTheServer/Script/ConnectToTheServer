@@ -46,9 +46,25 @@ Otherwise, you will not be able to
 
 create databases and users.
 
+The user does not have to be the same one
+
+as you are signed in to the computer as.
+
 For my examples I will be using
 
 the root user.
+
+It's not necessary for you to
+
+use the root user, though.
+
+Any user with elevated privileges is fine.
+
+Since I'm doing all my demonstrations
+
+on my own computer, it's just a matter of
+
+convenience for me to use the root user.
 
 To specify which user is accessing
 
