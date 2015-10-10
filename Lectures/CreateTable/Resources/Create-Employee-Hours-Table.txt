@@ -1,0 +1,1 @@
+CREATE TABLE employee_hours ( id INTEGER NOT NULL COMMENT 'Employee ID', work_date DATE NOT NULL COMMENT 'Date', start_time TIMESTAMP NOT NULL COMMENT 'Start Time', stop_time TIMESTAMP NOT NULL COMMENT 'Stop Time', UNIQUE KEY (id, work_date, start_time) );

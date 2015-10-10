@@ -1,0 +1,127 @@
+All the data in a database
+
+is stored inside tables.
+
+Tables are comprised of columns and rows.
+
+When you create a table,
+
+one of the things you must do
+
+is to define the columns.
+
+As data is stored in the table
+
+new rows are added.
+
+Since this is a beginner course,
+
+I will cover only a few simple
+
+examples of defining a table.
+
+Once I am logged in to the MySQL server
+
+I will choose a database to use by entering
+
+USE mydatabase;
+
+Even though it is possible to explicitly state
+
+in which database you wish to
+
+create a table when you are creating it,
+
+choosing the database first saves
+
+a bit of typing when you have to
+
+define many tables.
+
+See the resources attached to this lecture
+
+for a document that illustrates
+
+the tables I will create
+
+in the following examples.
+
+For all of the examples
+
+I will break the statement apart
+
+into multiple lines so
+
+that it's easier for you to read.
+
+First I will create the employee table.
+
+I have attached a resource
+
+to this lecture with
+
+the exact statement I've used.
+
+One important point to note
+
+is that I had to name
+
+the Terminated Date column
+
+something other than "terminated"
+
+because TERMINATED is a reserved word.
+
+I can use
+
+DESC employee;
+
+to describe the table I just created.
+
+You will notice that
+
+there is no information about the comment column.
+
+I can display that information by
+
+querying the information_schema database,
+
+that the MySQL server maintains,
+
+with the following SELECT statement.
+
+I have attached a resource to this lecture
+
+with the exact statement.
+
+Next I will create the employee_hours table.
+
+I have attached a resource to this lecture
+
+with the exact statement.
+
+For this table,
+
+in addition to using the id column
+
+as the primary key,
+
+I have another compound key.
+
+Notice that I used the UNIQUE reserved word.
+
+Also, since the key is comprised of multiple columns,
+
+I need to specify it on its own.
+
+I do not need to specify a separate key
+
+for the id column because
+
+the MySQL server can make use of
+
+the key that I already specified.
+
+This is because id is the first
+
+part of the key.
