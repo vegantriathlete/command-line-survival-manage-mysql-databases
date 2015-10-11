@@ -1,0 +1,1 @@
+CREATE TABLE employee_file ( id INTEGER NOT NULL COMMENT 'Employee ID', reviewer CHAR(64) COMMENT 'Reviewer', work_date DATE NOT NULL COMMENT 'Date', note TEXT NOT NULL COMMENT 'Note', KEY (id, work_date) );

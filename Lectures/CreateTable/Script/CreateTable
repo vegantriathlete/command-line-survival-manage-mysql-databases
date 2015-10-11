@@ -164,8 +164,100 @@ This is because id is the first
 
 part of the key.
 
-I have made use of some additional
+I have made use of the TIMESTAMP
 
-data_type types as well:
+data type as well.
 
-@todo: pick things up here.
+The truth is that the TIMESTAMP
+
+data type also has the date.
+
+So, it's really not necessary
+
+for this table to have the Date column.
+
+But, I'm pretending that the columns were
+
+chosen by a non-technical person who
+
+either didn't realize that it was possible
+
+to store the date and time or who
+
+specifically wanted the separate Date
+
+column for some reason.
+
+This type of thing may be sorted out
+
+by a DBA, or it may be something that
+
+you will encounter and
+
+have to deal with on your own.
+
+I'll finish up now by creating
+
+the employee_file table.
+
+I have attached a resource to this lecture
+
+with the exact statement.
+
+I have used the TEXT data type.
+
+I also removed the UNIQUE reserved word
+
+because it is possible to have
+
+more than one note on the same day
+
+for an employee.
+
+These examples have given you an introduction
+
+to creating tables via the command line.
+
+You should now have an idea of
+
+how to read the documentation
+
+for this command.
+
+The best way to learn more is to
+
+experiment on your own.
+
+Now that I've shown you how to create a table
+
+I will show you how to destroy the table.
+
+You can probably guess what the command is
+
+since it's practically the same command
+
+you use to destroy a database.
+
+To delete a table and its contents enter
+
+DROP TABLE yourtablname;
+
+I'll get rid of the three tables I created by entering
+
+DROP TABLE employee, employee_hours, employee_file;
+
+Notice that I was able to use one statement to
+
+drop all three tables at once.
+
+If all you want to do is to empty a table
+
+you can use the command
+
+TRUNCATE TABLE yourtablename;
+
+And that concludes all I'm going to
+
+say about tables for now!
+
+I'll see you in the next lecture!
