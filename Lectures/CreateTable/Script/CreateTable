@@ -62,6 +62,40 @@ to this lecture with
 
 the exact statement I've used.
 
+I'll break down the parts of
+
+the CREATE TABLE statement I have used.
+
+For starters, I am using the first specification
+
+of the possible statement patterns.
+
+I am using just the CREATE, TABLE, tbl_name
+
+and (create_definition, . . .) parts.
+
+From all the possible options in
+
+the create_definition grammar
+
+I am using only col_name and column_definition.
+
+I am using the first pattern for the column_definition.
+
+The options I'm using for the column_definition are:
+
+data_type, NOT NULL, AUTO_INCREMENT,
+
+PRIMARY KEY and COMMENT.
+
+The data_type types I used were:
+
+CHAR, INTEGER, ENUM and DATE.
+
+I chose to specify 64 bytes for the 
+
+length of the character columns.
+
 One important point to note
 
 is that I had to name
@@ -114,6 +148,10 @@ Also, since the key is comprised of multiple columns,
 
 I need to specify it on its own.
 
+So, I have added the use of the 
+
+UNIQUE KEY option from the create_definition grammar.
+
 I do not need to specify a separate key
 
 for the id column because
@@ -125,3 +163,9 @@ the key that I already specified.
 This is because id is the first
 
 part of the key.
+
+I have made use of some additional
+
+data_type types as well:
+
+@todo: pick things up here.
