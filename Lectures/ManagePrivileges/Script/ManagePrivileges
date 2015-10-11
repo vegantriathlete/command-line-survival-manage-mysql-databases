@@ -1,0 +1,112 @@
+A user can't do anything with
+
+a MySQL database until that user
+
+has been granted privileges.
+
+Which privileges a particular user needs
+
+is dependent on a given set of circumstances.
+
+I will provide a basic example of granting privileges.
+
+One thing that is useful to do before
+
+you begin the process of granting privileges
+
+is to determine how a user has been
+
+created in the system.
+
+You must grant the privileges to
+
+the specific user that has been created.
+
+So, I'll start out by executing the statement:
+
+SELECT user, host FROM mysql.user;
+
+I can see that the 'myfirstuser' account
+
+had been defined for the localhost host.
+
+It's possible to create the same user with different
+
+hosts and grant it different privileges
+
+for those different hosts.
+
+Let's say that I want 'myfirstuser'
+
+to have complete control over
+
+the 'mydatabase' database.
+
+I can execute the statement:
+
+GRANT ALL ON mydatabase.* TO 'myfirstuser'@'localhost';
+
+Note that I have indicated that 'myfirstuser' can
+
+do anything on any of the tables in the database
+
+by using the "*" wildcard.
+
+I could choose to grant privileges at the table level
+
+by specifying the table name instead of using a wildcard.
+
+If you take a look at the GRANT grammar,
+
+you will also notice that it's possible to
+
+grant privileges on specfic columns.
+
+You can get quite sophisticated with what
+
+you allow different users to do.
+
+If you want to determine what privileges
+
+a user has you can execute the statement:
+
+SHOW GRANTS FOR 'myfirstuser'@'localhost';
+
+Let's say that I decided I wanted 'myfirstuser'
+
+to have a more restricted set of privileges.
+
+First I'll revoke all of the privileges
+
+by executing the statement:
+
+REVOKE ALL ON mydatabase.* FROM 'myfirstuser'@'localhost';
+
+Maybe I just wanted 'myfirstuser' to be able to
+
+retrieve information from the tables,
+
+add information to the tables
+
+and update information in the tables.
+
+I can execute the statement:
+
+GRANT SELECT, INSERT, UPDATE ON mydatabase.* TO 'myfirstuser'@'localhost';
+
+One final thing you may need to do
+
+when dealing with granting users access
+
+to the database is to reset
+
+a user's password.
+
+You can accomplish this by executing the statement:
+
+SET PASSWORD FOR 'myfirstuser'@'localhost' = PASSWORD('stillbadpassword');
+
+Now you know how to be the ruler of your MySQL domain!
+
+I'll see you in the next lecture!
+I'll see you in the next lecture
