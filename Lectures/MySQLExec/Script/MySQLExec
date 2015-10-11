@@ -1,0 +1,87 @@
+I have encountered situations in which
+
+is was not convenient or possible to
+
+complete certain tasks while I was
+
+signed in to the MySQL server.
+
+For instance, I may have needed to
+
+run a query and have the results
+
+available in a text file.
+
+Let's say that I want all
+
+the employees' IDs and their
+
+First and Last Name.
+
+I can execute a mysql command
+
+from the command line.
+
+I have attached the exact commmand
+
+as a resource to this lecture.
+
+It's possible to get much
+
+more clever than that, though.
+
+Consider the need to change
+
+all the tables in a database
+
+to use the InnoDB engine.
+
+I can create a script
+
+for mysql to run
+
+by executing a mysql command.
+
+I have attached the exact commmand
+
+as a resource to this lecture.
+
+The command has created the
+
+ConvertToInnoDB.sql file.
+
+Now I can edit that file to
+
+remove the first line.
+
+Then I can run the command
+
+mysql -u root -p mydatabase < ConvertToInnoDB.sql
+
+Anything that you can do
+
+while logged in to the MySQL server
+
+can be done via the --execute option
+
+of the mysql command.
+
+These two examples should
+
+give you a bit of inspiration
+
+about clever ways you can
+
+a variety of different tasks.
+
+I hope you've enjoyed them
+
+and would love to see examples
+
+you've created.
+
+Please post them as discussion topics
+
+for this lecture!
+
+See you in the next lecture!

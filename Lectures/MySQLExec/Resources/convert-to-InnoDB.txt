@@ -1,0 +1,1 @@
+mysql -u root -p --execute="SELECT CONCAT('ALTER TABLE ', TABLE_NAME, ' ENGINE=InnoDB;') AS sql_statements FROM information_schema.TABLES WHERE TABLE_SCHEMA='mydatabase' AND ENGINE='MyISAM' AND TABLE_TYPE='BASE TABLE' ORDER BY TABLE_NAME ASC;" > ConvertToMyInnoDB.sql
