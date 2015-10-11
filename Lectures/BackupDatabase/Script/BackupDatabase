@@ -1,0 +1,75 @@
+If you don't back up your data
+
+then it doesn't exist.
+
+It's too late to think about
+
+doing a backup once
+
+your site has been hacked
+
+or your data has been corrupted or deleted.
+
+The documentation page provides
+
+a long list of options as well as
+
+many paragraphs of explanations.
+
+Odds are good, though, that
+
+you will be perfectly fine using:
+
+mysqldump --user=root --password mydatabase > mydatabasebackup.sql
+
+Note that I didn't sign in to
+
+the MySQL server to do this.
+
+I passed the user information in
+
+with the --user option and
+
+instructed the MySQL server to
+
+prompt for the password.
+
+You may also need to use the --host option.
+
+Once the command had finished running
+
+I had a file named mydatabasebackup.sql
+
+on my computer.
+
+As long as I've now got a backup
+
+I might as well test restoring it.
+
+I'm going to restore it directly
+
+to the same database.
+
+You might wish to first
+
+create a test database and
+
+restore into the test database.
+
+I can restore a database
+
+by executing the statement:
+
+mysql -u root -p mydatabase < mydatabasebackup.sql
+
+It's a good idea to test backing up and restoring databases
+
+because if you've got a problem with
+
+your backup or restore process
+
+it's too late to find that out when
+
+you've had a problem with your data
+
+and you really need the backup.
