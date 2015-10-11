@@ -1,0 +1,93 @@
+Some times you will have a need
+
+to make some changes to
+
+existing tables in your database.
+
+For example you may wish to
+
+add a new key to table
+
+to make accessing that table more efficient.
+
+Maybe I want to be able to generate
+
+a report of all the hours worked
+
+on a given day.
+
+First I will select the database
+
+I wish to use by executing the statement:
+
+USE mydatabase;
+
+Then, I could execute the statement:
+
+ALTER TABLE employee_hours ADD KEY (work_date);
+
+Sometimes you might wish to remove a key
+
+that is not being used.
+
+You need to know the name of the KEY.
+
+However, in my examples of creating keys
+
+I skipped giving the keys a name.
+
+I can find out the name of the keys
+
+by executing a SELECT statement.
+
+I've attached the exact statement
+
+as a resource to this lecture.
+
+Make sure to substitute your table name.
+
+You might also want to
+
+specify which TABLE_SCHEMA to use.
+
+I can see that the KEY
+
+I wish to DROP is named work_date.
+
+I can remove it by executing the statement:
+
+ALTER TABLE employee_hours DROP KEY work_date;
+
+Another type of change you may wish to make
+
+is to change the type of table.
+
+You change the TABLE ENGINE to do this.
+
+First I'll show which ENGINE my tables
+
+are using by executing the statement:
+
+SHOW TABLE STATUS WHERE NAME = 'employee_hours'\G;
+
+I can change the ENGINE to MyISAM
+
+by executing the statement:
+
+ALTER TABLE employee_hours ENGINE = 'MyISAM';
+
+There are many other ways
+
+you might occasionally need to
+
+alter a table including
+
+adding, dropping or altering a column.
+
+However, this lecture has completed its job
+
+of getting you started
+
+with the basic approach.
+
+See you in the next lecture!
