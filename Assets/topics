@@ -4,7 +4,7 @@ Connect to the MySQL server (may need -h option) [man mysql; https://dev.mysql.c
 Create a MySQL Database [https://dev.mysql.com/doc/refman/5.7/en/create-database.html, https://dev.mysql.com/doc/refman/5.7/en/drop-database.html]
 Create a table in the Database [https://dev.mysql.com/doc/refman/5.7/en/create-table.html, https://dev.mysql.com/doc/refman/5.7/en/drop-table.html, https://dev.mysql.com/doc/refman/5.7/en/truncate-table.html]
 Create a User for the Database (differentiate between the database user and the user who signs in to the application) [https://dev.mysql.com/doc/refman/5.7/en/create-user.html, https://dev.mysql.com/doc/refman/5.7/en/drop-user.html]
-Manage Privileges for the User for the Database [https://dev.mysql.com/doc/refman/5.7/en/grant.html] 
+Manage Privileges for the User for the Database [https://dev.mysql.com/doc/refman/5.7/en/grant.html, https://dev.mysql.com/doc/refman/5.7/en/revoke.html] 
 => SELECT user, host FROM mysql.user;
 Manually Back Up the Database [https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html]
 Manually Restore the Database [man mysql; https://dev.mysql.com/doc/refman/5.7/en/mysql.html]
