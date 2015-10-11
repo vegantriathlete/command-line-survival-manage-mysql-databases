@@ -1,0 +1,147 @@
+Before I show how to create a user
+
+I want to revisit a point I briefly touched on
+
+during the lecture on connecting to the MySQL server.
+
+The MySQL user account is its own entity.
+
+It can be different from the user as whom
+
+you are signed in to the computer.
+
+It can and should be different from the account
+
+you use to access the web application that
+
+is using the MySQL database.
+
+For instance, I'm signed in
+
+to my computer as marc.
+
+But, I've been accessing the database as root.
+
+When I create new Drupal websites,
+
+I always create a MySQL user account
+
+just for that website.
+
+The user account and password
+
+are things that I make up
+
+just for MySQL database
+
+and aren't used anywhere else.
+
+And, to reinforce another point,
+
+I am using the root user
+
+as a matter of convenience.
+
+It is best practice to have
+
+your applications access the MySQL database
+
+with a user other than root.
+
+You may also create a special user
+
+with elevated privileges to do
+
+the MySQL Database administration.
+
+So, how about if I finally get to it!
+
+I'll demonstrate a basic example
+
+by executing the statement:
+
+CREATE USER 'myfirstuser'@'localhost' IDENTIFIED BY 'reallybadpassword';
+
+The command is pretty straightforward.
+
+But, there are typical stumbling blocks.
+
+Pay attention that I have placed single quotes around
+
+the user name and the host name and that the "@" sign
+
+is not inside the quotes.
+
+You also need to recognize that I have
+
+specified a particular host.
+
+This fact becomes important when
+
+I want to assign privileges.
+
+I will come back to this point
+
+in the lecture on managing user privileges.
+
+MySQL does recognize the "%" wildcard.
+
+You may need to make use of it
+
+to address special needs
+
+in your particular circumstance.
+
+However, it's beyond the scope of
+
+this course to get into
+
+the various security measures
+
+and different circumstances
+
+a person may encounter.
+
+Now that I have created a user,
+
+it's possible for that user
+
+to sign in to the MySQL server.
+
+I'll sign out of the root account
+
+and I'll sign in using the myfirstuser account.
+
+When I inspect the Databases available to me
+
+I see that there really aren't many.
+
+This is because this user hasn't been
+
+granted any privileges.
+
+I will cover that in a separate lecture.
+
+I'll sign in again with my root account
+
+so that I can show you one last thing
+
+in this lecture.
+
+If I want to delete a user account
+
+I can execute the statment:
+
+DROP USER 'myfirstuser'@'localhost';
+
+Pay attention that I do have to specify
+
+the user name and the host name
+
+the same way as when I created the user account.
+
+I'll create the account again so that
+
+it's ready for the lecture on managing privileges.
+
+See you in the next lecture!
